@@ -12,6 +12,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.0.3",
     "framer": "^2.4.1",
+    "framer-motion": "^12.4.10",
     "localforage": "^1.10.0",
     "match-sorter": "^8.0.0",
     "motion": "^12.4.10",
