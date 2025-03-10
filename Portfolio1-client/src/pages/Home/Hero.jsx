@@ -2,8 +2,8 @@ import { motion } from "motion/react";
 import profilePic from "../../assets/pic-2.jpg";
 const Hero = () => {
   return (
-    <div className="relative overflow-clip  text-white bg-[linear-gradient(to_bottom,#000,#071E18_35%,#208A65_67%,#35FB8E_85%)]">
-      <div className="absolute bg-black w-[2400px] h-[1000px] rounded-[50%] left-1/2 -translate-x-1/2 bg-[radial-gradient(closest-side,#000_85%,#249974)] top-[450px] border-[1px] border-[#8CD6DE]/30" />
+    <div className="relative overflow-clip  text-white bg-[linear-gradient(to_bottom,#000,#04172a_35%,#0b4071_67%,#0b4071_85%)]">
+      <div className="absolute bg-black w-[2400px] h-[1000px] rounded-[50%] left-1/2 -translate-x-1/2 bg-[radial-gradient(closest-side,#000_85%,#0b4071)] top-[450px] border-[1px] border-[#85c2fe]/30" />
       <div className="container relative mx-auto px-4 pt-12 pb-14">
         <div className="flex flex-col items-center justify-center text-center z-10">
           {/* img div */}
@@ -13,7 +13,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="relative mb-4 mt-24 "
           >
-            <div className="absolute inset-0 bg-gradient-to-b from-emerald-500/20 to-transparent rounded-full blur-3xl"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-[#0b4071]-500/20 to-transparent rounded-full blur-3xl"></div>
             <img
               src={profilePic}
               alt="Rabiya Rumi"
@@ -39,7 +39,7 @@ const Hero = () => {
             <div className="flex gap-4 justify-center">
               <motion.button
                 whileHover={{ scale: 1.05 }}
-                className="px-6 py-3 bg-emerald-500 rounded-full font-medium hover:bg-emerald-600 transition-colors"
+                className="px-6 py-3 bg-[#0060ba] rounded-full font-medium hover:bg-[#0b4071] transition-colors"
               >
                 <a
                   href="https://drive.google.com/file/d/1ifZWXeRB203Q4fkNdU1TrOEOmQWlXNei/view?usp=sharing"
