@@ -2,12 +2,12 @@ import { motion } from "motion/react";
 import profilePic from "../../assets/pic-2.jpg";
 const Hero = () => {
   return (
-    <div className="relative overflow-clip  text-white bg-[linear-gradient(to_bottom,#000,#04172a_35%,#0b4071_67%,#0b4071_85%)]">
-      <div className="absolute bg-black w-[2400px] h-[1000px] rounded-[50%] left-1/2 -translate-x-1/2 bg-[radial-gradient(closest-side,#000_85%,#0b4071)] top-[450px] border-[1px] border-[#85c2fe]/30" />
+    <div className="relative overflow-clip  text-white bg-[linear-gradient(to_bottom,#020d18,#04172a_35%,#0b4071_67%,#0b4071_85%)]">
+      <div className="absolute bg-black w-[2400px] h-[1000px] rounded-[50%] left-1/2 -translate-x-1/2 bg-[radial-gradient(closest-side,#020d18_85%,#0b4071)] top-[450px] border-[1px] border-[#85c2fe]/30" />
       <div className="container relative mx-auto px-4 pt-12 pb-14">
         <div className="flex flex-col items-center justify-center text-center z-10">
           {/* img div */}
-          <motion.div
+           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
@@ -19,7 +19,7 @@ const Hero = () => {
               alt="Rabiya Rumi"
               className="w-[250px] h-[250px] rounded-full  relative z-10"
             />
-          </motion.div>
+          </motion.div> 
           {/* description div */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
