@@ -2,7 +2,7 @@ import img from "../../assets/codding_girl.jpg";
 
 const About = () => {
   return (
-    <section className="py-12 px-6 sm:px-12 lg:px-2  w-[90%] lg:w-full mx-auto">
+    <section className="py-12 px-6 sm:px-12 lg:px-2  w-[90%]  mx-auto">
       <h2 className="text-4xl font-bold text-[#1989f4]  mb-10 text-center">
         About Me
       </h2>
