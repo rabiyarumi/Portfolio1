@@ -1,14 +1,56 @@
+import profilePic from "../../assets/pic-4_crooped.jpg";
+import { Typewriter } from "react-simple-typewriter";
 import { motion } from "motion/react";
-import profilePic from "../../assets/pic-2.jpg";
+import { div } from "framer-motion/client";
 const Hero = () => {
   return (
-    <div className="bg-[#081C15]/40 backdrop-blur-lg border border-white/20 rounded-2xl shadow-lg flex flex-col items-center justify-center min-h-dvh w-[85%] mx-auto">
+    <div className="bg-[#081C15]/40 backdrop-blur-lg border border-white/20 rounded-2xl shadow-lg flex flex-col items-center justify-center py-20 w-[85%] mx-auto">
+      <img src={profilePic} className="h-[300px] w-[300px] rounded-4xl" alt="" />
       <div>
       <p className="text-start">Hi I'm</p>
       <h2 className="text-8xl ">Rabiya </h2>
       <h2 className="text-9xl ">Rumi</h2>
-      <p>I am a Web Developer</p>
       </div>
+      
+      <h3 className="mt-2 text-2xl text-start">
+          I'm a
+          <Typewriter
+            words={[
+              " Web Developer",
+              " MERN Stack Developer",
+              " JavaScript and React Enthusiast",
+            ]}
+            loop={0}
+            cursor
+            cursorStyle="_"
+            typeSpeed={100}
+            deleteSpeed={100}
+            delaySpeed={3000}
+          />
+        </h3>
+      <div className="flex gap-3 mt-4">
+    
+      <motion.button
+                whileHover={{ scale: 1.05 }}
+                className="px-6 py-3 bg-white/70 border-[#081C15] text-black rounded-xl font-medium hover:bg-white/90 transition-colors"
+              >
+                <a
+                  href="https://drive.google.com/file/d/1ifZWXeRB203Q4fkNdU1TrOEOmQWlXNei/view?usp=sharing"
+                  target="_blank"
+                  className="btn btn-primary w-fit"
+                >
+                View Resume
+                </a>
+              </motion.button>
+                     
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                className="px-6 py-3 border border-white/20 rounded-xl font-medium hover:bg-white/10 transition-colors"
+              >
+               View Work
+              </motion.button>
+      </div>
+  
     </div>
 
     // <div className="relative overflow-clip  text-white bg-[linear-gradient(to_bottom,#020d18,#04172a_35%,#0b4071_67%,#0b4071_85%)]">
