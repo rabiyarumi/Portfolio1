@@ -5,12 +5,12 @@ const About = () => {
   return (
     <section className="py-12 px-6 sm:px-12 lg:px-2  w-[90%]  mx-auto">
       <div className="bg-gradient-to-b from-white via-white to-[#081C15]/50 bg-clip-text w-fit mx-auto">
-        <h2 className="text-5xl font-bold  mb-10 text-center  text-transparent">
+        <h2 className="text-5xl font-bold  mb-2 text-center  text-transparent">
           About Me
         </h2>
       </div>
 
-      <div className="md:flex gap-10">
+      <div className="md:flex items-center gap-10">
         <div className="md:w-1/2">
         <Lottie animationData={codderGirl}></Lottie>
          
