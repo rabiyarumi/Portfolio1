@@ -1,10 +1,11 @@
 import profilePic from "../../assets/pic-4_crooped.jpg";
 import { Typewriter } from "react-simple-typewriter";
-import { motion } from "motion/react";
-import { div } from "framer-motion/client";
+import { motion } from "framer-motion";
+import { MdOutlineFileDownload } from "react-icons/md";
+import { LuEye } from "react-icons/lu";
 const Hero = () => {
   return (
-    <div className="bg-[#081C15]/40 backdrop-blur-lg border border-white/20 rounded-2xl shadow-lg flex flex-col items-center justify-center py-20 w-[85%] mx-auto">
+    <motion.div className="bg-[#081C15]/40 backdrop-blur-lg border border-white/20 rounded-2xl shadow-lg flex flex-col items-center justify-center py-20 w-[85%] mx-auto">
       <img src={profilePic} className="h-[300px] w-[300px] rounded-4xl" alt="" />
       <div>
       <p className="text-start">Hi I'm</p>
@@ -28,32 +29,42 @@ const Hero = () => {
             delaySpeed={3000}
           />
         </h3>
-      <div className="flex gap-3 mt-4">
+      <motion.div className="flex gap-3 mt-4">
     
       <motion.button
                 whileHover={{ scale: 1.05 }}
-                className="px-6 py-3 bg-white/70 border-[#081C15] text-black rounded-xl font-medium hover:bg-white/90 transition-colors"
+                className=""
               >
                 <a
                   href="https://drive.google.com/file/d/1ifZWXeRB203Q4fkNdU1TrOEOmQWlXNei/view?usp=sharing"
                   target="_blank"
-                  className="btn btn-primary w-fit"
+                  className=" w-fit flex items-center gap-2 px-6 py-3  bg-white/70 border-[#081C15] text-black rounded-xl font-medium text-lg hover:bg-white/90 transition-colors"
                 >
-                View Resume
+                  <MdOutlineFileDownload size={20} className="" />
+                <span>Resume</span>
                 </a>
               </motion.button>
                      
               <motion.button
                 whileHover={{ scale: 1.05 }}
-                className="px-6 py-3 border border-white/20 rounded-xl font-medium hover:bg-white/10 transition-colors"
+                className="px-6 py-3 border border-white/20 rounded-xl font-medium hover:bg-white/10 transition-colors flex items-center gap-2"
               >
-               View Work
+                <LuEye size={20} />
+              <span> View Work</span>
               </motion.button>
-      </div>
+      </motion.div>
   
-    </div>
+    </motion.div>
 
-    // <div className="relative overflow-clip  text-white bg-[linear-gradient(to_bottom,#020d18,#04172a_35%,#0b4071_67%,#0b4071_85%)]">
+   
+  );
+};
+
+export default Hero;
+
+
+
+ // <div className="relative overflow-clip  text-white bg-[linear-gradient(to_bottom,#020d18,#04172a_35%,#0b4071_67%,#0b4071_85%)]">
     //   <div className="absolute bg-black w-[2400px] h-[1000px] rounded-[50%] left-1/2 -translate-x-1/2 bg-[radial-gradient(closest-side,#020d18_85%,#0b4071)] top-[450px] border-[1px] border-[#85c2fe]/30" />
     //   <div className="container relative mx-auto px-4 pt-12 pb-14">
     //     <div className="flex flex-col items-center justify-center text-center z-10">
@@ -115,7 +126,3 @@ const Hero = () => {
 
     //   </div>
     // </div>
-  );
-};
-
-export default Hero;
