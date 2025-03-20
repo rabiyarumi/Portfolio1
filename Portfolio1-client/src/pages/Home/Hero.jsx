@@ -57,11 +57,11 @@ const Hero = () => {
       </motion.div>
       <div className="flex gap-4 mt-4 items-center justify-start">
        
-        <a href="https://discord.com/users/1258787223826993246" target="_blank">
+        <a href="https://www.linkedin.com/in/rabiya-rumi/" target="_blank">
         <FaLinkedin size={33}/>
           
         </a>
-        <a href="https://discord.com/users/1258787223826993246" target="_blank">
+        <a href="https://github.com/rabiyarumi" target="_blank">
         <FaSquareGithub size={33} />
           
         </a>
