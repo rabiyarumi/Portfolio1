@@ -7,12 +7,13 @@ import { FaLinkedin, FaSquareGithub } from "react-icons/fa6";
 import { IoLogoDiscord } from "react-icons/io5";
 const Hero = () => {
   return (
-    <motion.div className="bg-[#081C15]/40 backdrop-blur-lg border border-white/20 rounded-2xl shadow-lg flex flex-col items-center justify-center py-20 w-[85%] mx-auto">
+    <motion.div className="bg-[#081C15]/40 backdrop-blur-lg border border-white/20 rounded-2xl shadow-lg flex flex-col md:flex-row-reverse gap-10 md:gap-20 items-center justify-center py-20 w-[85%] mx-auto">
       <img
         src={profilePic}
-        className="h-[300px] w-[300px] rounded-4xl"
+        className="h-[300px] md:h-[370px] w-[300px] md:w-[350px] rounded-4xl"
         alt=""
       />
+      <div>
       <div>
         <p className="text-start -mb-5 ml-1">Hi I'm</p>
         <h2 className="text-8xl ">Rabiya </h2>
@@ -20,12 +21,13 @@ const Hero = () => {
       </div>
 
       <h3 className="mt-2 text-2xl text-start">
-        I'm a
+       
         <Typewriter
           words={[
             " Web Developer",
             " MERN Stack Developer",
-            " JavaScript and React Enthusiast",
+            " Expert in",
+            " JavaScript and React",
           ]}
           loop={0}
           cursor
@@ -70,6 +72,7 @@ const Hero = () => {
           
         </a>
         
+      </div>
       </div>
     </motion.div>
   );

@@ -16,7 +16,7 @@ const Skills = () => {
     return (
         <section className="pb-8 px-6 sm:px-12 lg:px-2  w-[90%]  mx-auto">
             <div className="bg-gradient-to-b from-white via-white to-[#081C15]/50 bg-clip-text w-fit mx-auto">
-        <h2 className="text-5xl font-bold  mb-2 text-center  text-transparent">
+        <h2 className="text-5xl font-bold  mb-8 text-center  text-transparent">
           My Skills
         </h2>
 
@@ -27,7 +27,7 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col items-center p-4 w-32 h-36   ml-10 bg-[#081C15]/40 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg "
+            className="flex flex-col items-center justify-center p-4 w-32 h-36   ml-10 bg-[#081C15]/40 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg "
           >
             <img
               src={skill.logo}
