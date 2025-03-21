@@ -17,7 +17,7 @@ const Skills = () => {
         <section className="pb-8 px-6 sm:px-12 lg:px-2  w-[90%]  mx-auto">
             <div className="bg-gradient-to-b from-white via-white to-[#081C15]/50 bg-clip-text w-fit mx-auto">
         <h2 className="text-5xl font-bold  mb-2 text-center  text-transparent">
-          About Me
+          My Skills
         </h2>
 
       </div>
@@ -27,12 +27,12 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col items-center p-4 w-32 shadow-md rounded-lg  ml-10 "
+            className="flex flex-col items-center p-4 w-32 h-36   ml-10 bg-[#081C15]/40 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg "
           >
             <img
               src={skill.logo}
               alt={`${skill.name} logo`}
-              className=" h-16 mb-4"
+              className=" h-10 mb-4"
             />
             <h3 className="text-lg font-medium ">{skill.name}</h3>
           </div>
